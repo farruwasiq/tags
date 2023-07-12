@@ -2,7 +2,15 @@ resource "aws_s3_bucket" "example" {
   bucket = "my-tf-test-bucket"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "My bucket-adfafuiuasdf"
+    Environment = "Dev"
+  }
+}
+resource "aws_s3_bucket" "example" {
+  bucket = "my-tf-test-bucket"
+
+  tags = {
+    Name        = "My bucket-adfafuiuasdf"
     Environment = "Dev"
   }
 }
